@@ -1,0 +1,19 @@
+userName: <username>
+accessKey: <access_key>
+framework: playwright
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: chrome
+    browserVersion: latest
+    playwrightConfigOptions:
+      setup: 
+      - name: 'setup1'
+        testMatch: '**/auth.setup.ts'
+buildName: Ticket1202579_1
+buildIdentifier: ${BUILD_NUMBER}
+debug: true
+consoleLogs: info
+browserstack.geoLocation: MX
+parallelsPerPlatform: 3
+acceptInsecureCerts: true
